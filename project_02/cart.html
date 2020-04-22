@@ -1,0 +1,204 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+    <link href="https://fonts.googleapis.com/css2?family=Handlee&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/cart.css"/>
+    <title>Your Cart</title>
+  </head>
+  <body>
+  
+  
+    <!-----Nav bar-->
+    <nav class="container-fluid  navbar navbar-expand-lg navbar-dark bg-dark">
+      
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+   <!--<a class="navbar-brand" href="#"><i class="fas fa-pepper-hot"></i></a>--> 
+
+    <div class=" container-fluid sticky-top navbar-collapse" id="navbarTogglerDemo03">
+        <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+          <li class="nav-item ">
+            <a class="nav-link mr-5" href="../index.html">Home </a>
+          </li>
+          <li class="nav-item mr-5">
+            <a class="nav-link " href="../about.html">About us</a>
+          </li>
+          <li class="nav-item mr-5">
+            <a class="nav-link " href="../catalog.html">Catalog</a>
+          </li>
+          <li class="nav-item mr-5">
+            <a class="nav-link active " href="cart.html">Cart <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item mr-5">
+            <a class="nav-link mr-sm-2" href="checkout.html">Check Out</a>
+          </li>
+        </ul>
+           <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" onkeyup="DataTable()" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+    </div>
+</nav>
+</div>
+<!---Nav bar-->
+
+
+
+   <!---Main Menu-----------Nav bar-->
+   
+   <table class=" container-fluid  m-5  table-hover">
+    <thead>
+      <tr>
+          <!-------Item Quantity-->
+        
+        <th scope="col">Item Image</th>
+        <th scope="col">Item Name</th>
+        <th scope="col">Unite Price</th>
+        <th scope="col">Quantity</th>
+        <th scope="col">Total Price</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="border ">
+        <td class="size">
+          <img src="../img/img-02.jpg" class="img-fluid img-thumbnail image" alt="70X70 item image">
+        </td>
+        
+        <td> National-Biryani</td>
+
+        <td>$1.99</td>
+        <th scope="row">
+          <!-----Buttons-->
+          <div class="btn-group" role="group" aria-label="Basic example">
+          <button type="button" class="btn-lg btn-danger">-</button>
+          <button type="button" class="btn btn">
+              <form class="form-inline my-2 my-lg-0">
+                  <input class="form-control " type="search" placeholder="1" aria-label="Search">
+                
+              </form>
+              </button>
+          <button type="button" class="btn-lg btn-success">+</button>
+          </div>
+          <!-----/Buttons-->
+        </th>
+        <td>$1.99 <a><i class="far fa-trash-alt"></i></a> </td>
+        
+      </tr>
+      
+     <!-----row two-->
+
+     <tr class="border col-md-4 ">
+      <td class="size">
+        <img src="../img/img-03.jpg" class="img-fluid img-thumbnail image" alt="70X70 item image">
+      </td>
+      
+      <td> Naked Juice</td>
+
+      <td>$0.99</td>
+      <th scope="row">
+        <!-----Buttons-->
+        <div class="btn-group" role="group" aria-label="Basic example">
+        <button type="button" class="btn-lg btn-danger">-</button>
+        <button type="button" class="btn btn">
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control " type="search" placeholder="2" aria-label="Search">
+              
+            </form>
+            </button>
+        <button type="button" class="btn-lg btn-success">+</button>
+        </div>
+        <!-----/Buttons-->
+      </th>
+      <td>$2.98 <a><i class="far fa-trash-alt"></i></a> </td>
+    </tr>
+   
+     <!--Row two-->
+
+
+      <!-----row three-->
+
+     <tr class="border col-md-4">
+      <td class="size">
+        <img src="../img/img-06.jpg" class="img-fluid img-thumbnail image" alt="70X70 item-image">
+      </td>
+      
+      <td> Milk Gallon</td>
+
+      <td>$3.49</td>
+      <th scope="row">
+        <!-----Buttons-->
+        <div class="btn-group" role="group" aria-label="Basic example">
+        <button type="button" class="btn-lg btn-danger">-</button>
+        <button type="button" class="btn btn">
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control " type="search" placeholder="1" aria-label="Search">
+              
+            </form>
+            </button>
+        <button type="button" class="btn-lg btn-success">+</button>
+        </div>
+        <!-----/Buttons-->
+      </th>
+      <td>$3.49 <a><i class="far fa-trash-alt"></i></a> </td>
+    </tr>
+   
+     <!--Row three-->
+    
+       
+   
+    </tbody>
+  </table>
+
+  <!-----Total-->
+<p ></p>
+      <h3 class="text-right mr-5">Total Due: $8.46 </h3>
+    </p>
+       <!--/Total-->
+  
+
+<p class="mx-5 my-5">
+<a href="checkout.html" class="btn-lg btn-success float-right">Checkout<i class="fa fa-angle-right"></i> </a>
+
+ <a href="catalog.html" class="btn btn-warning"><i class="fa fa-angle-left"></i> Continue Shopping</a>
+</p >
+</div>
+    <!-- Footer -->
+
+<footer class=" container-fluid mt-3 fixed-bottom page-footer bg-dark">
+
+  <!-- Copyright -->
+  <div class=" footer-copyright  text-white text-center py-2">© 2020 Copyright && powered by Syed Raza 
+    <ul class="list-inline">
+      <li class="list-inline-item"><a href="../index.html">www.victoryhalal.com</a></li>
+      <li class="list-inline-item"><a href="#">Privacy</a></li>
+      <li class="list-inline-item"><a href="#">Terms</a></li>
+      <li class="list-inline-item"><a href="#">Support</a></li>
+    </ul>
+  </div>
+
+  <!-- Copyright -->
+
+</footer>
+<div>
+<!-- Footer -->
+    <!-- Optional JavaScript -->
+    <script>
+    $(document).ready(function () {
+      $('#dtBasicExample').DataTable();
+      $('.dataTables_length').addClass('bs-select');
+      });
+    </script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+</html>
